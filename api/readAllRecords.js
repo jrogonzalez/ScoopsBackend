@@ -16,7 +16,7 @@ var api = {
         }
 
         var context = req.azureMobile;
-        var user = context.user.id;
+        //var user = context.user.id;
 
         var query = {
             sql: "select * from News"
