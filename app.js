@@ -9,7 +9,7 @@ var mobile = azuremobileapps();
 
 
 
-mobile.table.import("./tables");
+mobile.tables.import("./tables");
 
 mobile.api.import("./api");
 
