@@ -4,10 +4,11 @@
 var api = {
 
     get: function (req, res, next) {
+        console.log("ENTRADA EN EL GET");
 
         //check the params
         if (typeof req.params.length < 0 ){
-            print("params.length < 0");
+            console.log("params.length < 0");
             return next();
         }
 
@@ -20,7 +21,7 @@ var api = {
 
         req.azureMobile.data.exec(query)
             .then(function (result) {
-                print("RESULT QUERY GET");
+                console.log("RESULT QUERY GET");
                 res.json(result);
         });
     }
