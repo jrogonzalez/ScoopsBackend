@@ -5,7 +5,9 @@ var express = require("express");
 var azuremobileapps = require("azure-mobile-apps");
 
 var app = express();
-var mobile = azuremobileapps();
+var mobile = azuremobileapps(swagger: process.env.NODE_ENV !== 'production');
+
+
 
 mobile.table.import("./tables")
 
