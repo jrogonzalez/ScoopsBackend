@@ -18,7 +18,7 @@ table.columns = {
     "LocationName": "string"
 };
 
-table.dynamicSchema = false; // asi haces que no se pueda modificar el schema de la tabla y se quede como lo hemos creado
+//table.dynamicSchema = false; // asi haces que no se pueda modificar el schema de la tabla y se quede como lo hemos creado
 
 /*
 * Trigger para insert
