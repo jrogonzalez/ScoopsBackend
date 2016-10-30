@@ -25,7 +25,7 @@ var api = {
                 res.json(result);
         });
     }
-}
+};
 
 //api.get.access = 'authenticated';
 api.get.access = 'anonymous';

@@ -27,12 +27,12 @@ table.dynamicSchema = false; // asi haces que no se pueda modificar el schema de
 table.insert(function (context) {
     context.item.idUsuario = context.user.id; // estamos creando una columna idUsuario a la que le ponemos el id del usuario que nos hemos traido de facebook
     return context.execute();
-})
+});
 
 table.read(function (context) {
     context.query.where({usuario: context.user.id});
     return context.execute();
-})
+});
 
 /*
 * Permisos de acceso a la table
